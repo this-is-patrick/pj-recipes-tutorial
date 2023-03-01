@@ -4,14 +4,59 @@ import { StaticImage } from "gatsby-plugin-image";
 const Images = () => {
   return (
     <Wrapper>
-      <StaticImage src="../assets/images/big_copy.jpg" alt="food" />
-      <h2>gatsby image component</h2>
+      <article>
+        <h4>constrained</h4>
+        <StaticImage
+          src="../assets/images/recipe-1.jpeg"
+          alt="food"
+          placeholder="tracedSVG"
+          layout="constrained"
+          className="example-img"
+          as="section"
+        />
+      </article>
+      <article>
+        <h4>fixed</h4>
+        <StaticImage
+          src="../assets/images/recipe-1.jpeg"
+          alt="food"
+          placeholder="tracedSVG"
+          layout="fixed"
+          className="example-img"
+          as="section"
+        />
+      </article>
+      <article>
+        <h4>full width</h4>
+        <StaticImage
+          src="../assets/images/recipe-1.jpeg"
+          alt="food"
+          placeholder="tracedSVG"
+          layout="full-width"
+          className="example-img"
+          as="section"
+        />
+      </article>
     </Wrapper>
   );
 };
 const Wrapper = styled.section`
-  img {
-    width: 200px;
+  width: 70vw;
+  margin: 0 auto;
+  display: grid;
+  text-align: center;
+  article {
+    border: 2px solid red;
+  }
+  .example-img {
+    border-radius: 1rem;
+    height: 300px;
+  }
+  @media (min-width: 992px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    .example-img {
+      height: 200px;
+    }
   }
 `;
 
