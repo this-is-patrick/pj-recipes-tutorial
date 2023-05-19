@@ -7,6 +7,11 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
     title: "Simply Recipes",
@@ -38,6 +43,22 @@ module.exports = {
         ignore: [`**/\.*`],
         // Use "mtime" and "inode" to fingerprint files (to check if file has changed)
         fastHash: true,
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `d4kaowmojbwt`,
+        accessToken: process.env.CONTENTFUL_API_KEY,
+        //proxy: {
+        //  protocol: "https",
+        //  host: "10.1.192.48",
+        //  port: 912,
+        //  auth: {
+        //    username: "pjjimiso",
+        //    password: "st1llness211!",
+        //  },
+        //},
       },
     },
   ],
