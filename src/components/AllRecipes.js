@@ -11,7 +11,7 @@ const query = graphql`
         prepTime
         cookTime
         image {
-          gatsbyImage(layout: CONSTRAINED, placeholder: TRACED_SVG)
+          gatsbyImageData(layout: CONSTRAINED, placeholder: DOMINANT_COLOR)
         }
         content {
           tags
@@ -24,13 +24,13 @@ const query = graphql`
 const AllRecipes = () => {
   const data = useStaticQuery(query);
   const recipes = data.allContentfulBlog.nodes;
-  console.log(recipes);
+
   return (
-    <div>
+    <section className="recipes-container">
       <h4>all recipes</h4>
-      <Tagslist />
-      <RecipesList />
-    </div>
+      <Tagslist recipes={recipes} />
+      <RecipesList recipes={recipes} />
+    </section>
   );
 };
 
