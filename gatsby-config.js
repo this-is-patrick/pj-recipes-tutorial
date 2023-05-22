@@ -8,6 +8,10 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 
+// Needed for Contentful plugin to access proxy settings
+// https://github.com/gatsbyjs/gatsby/issues/28526
+require("global-agent/bootstrap");
+
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 });
