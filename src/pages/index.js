@@ -6,7 +6,7 @@ import AllRecipes from "../components/AllRecipes";
 export default function Home() {
   return (
     <Layout>
-      <main className="page">
+      <main className="main-page">
         <header className="hero">
           <StaticImage
             src="../assets/images/main.jpeg"
