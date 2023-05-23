@@ -8,11 +8,11 @@ const RecipesList = ({ recipes = [] }) => {
       {recipes.map((recipe) => {
         const { id, title, image, prepTime, cookTime } = recipe;
         console.log(recipe);
-        const pathToImage = getImage(recipe);
+        const pathToImage = getImage(image);
         return (
           <Link key={id} to={`/${title}`} className="recipe">
             <GatsbyImage
-              image={image.gatsbyImageData}
+              image={pathToImage}
               className="recipe-img"
               alt={title}
             />
