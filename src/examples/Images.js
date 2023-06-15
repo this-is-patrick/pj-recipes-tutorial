@@ -20,7 +20,7 @@ const Images = () => {
         <StaticImage
           src="../assets/images/recipes/recipe-1.jpeg"
           alt="food"
-          placeholder="tracedSVG"
+          placeholder="blurred"
           layout="fixed"
           className="example-img"
           as="section"
@@ -31,7 +31,7 @@ const Images = () => {
         <StaticImage
           src="../assets/images/recipes/recipe-1.jpeg"
           alt="food"
-          placeholder="tracedSVG"
+          placeholder="blurred"
           layout="full-width"
           className="example-img"
           as="section"
