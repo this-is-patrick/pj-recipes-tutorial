@@ -6,13 +6,13 @@ import AllRecipes from "../components/AllRecipes";
 export default function Home() {
   return (
     <Layout>
-      <main className="main-page">
+      <main className="page">
         <header className="hero">
           <StaticImage
             src="../assets/images/main.jpeg"
             alt="Flower and Eggs"
             className="hero-img"
-            placeholder="tracedSVG"
+            placeholder="blurred"
             layout="fullWidth"
           />
           <div className="hero-container">
@@ -22,8 +22,8 @@ export default function Home() {
             </div>
           </div>
         </header>
+        <AllRecipes />
       </main>
-      <AllRecipes />
     </Layout>
   );
 }
