@@ -7,6 +7,7 @@ const query = graphql`
   query {
     allContentfulBlog(sort: { title: ASC }) {
       nodes {
+        id
         title
         prepTime
         cookTime
