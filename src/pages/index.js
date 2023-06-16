@@ -27,3 +27,5 @@ export default function Home() {
     </Layout>
   );
 }
+
+export { Head } from "../components/SEO";

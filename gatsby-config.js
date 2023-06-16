@@ -21,6 +21,7 @@ module.exports = {
     title: "Simply Recipes",
     description: "Nice and clean recipes site",
     author: "@pjjimiso",
+    image: "./favicon.ico",
     person: { name: "patrick", age: 32 },
     simpleData: ["item 1", "item 2"],
     complexData: [
