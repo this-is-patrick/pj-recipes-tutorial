@@ -9,15 +9,6 @@ const ComponentName = () => {
           title
           description
           author
-          person {
-            name
-            age
-          }
-          simpleData
-          complexData {
-            name
-            age
-          }
         }
       }
     }

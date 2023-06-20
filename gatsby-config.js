@@ -21,13 +21,8 @@ module.exports = {
     title: "Simply Recipes",
     description: "Nice and clean recipes site",
     author: "@pjjimiso",
+    siteUrl: "www.simplyrecipes.com",
     image: "./favicon.ico",
-    person: { name: "patrick", age: 32 },
-    simpleData: ["item 1", "item 2"],
-    complexData: [
-      { name: "patrick", age: 32 },
-      { name: "domenica", age: 25 },
-    ],
   },
   plugins: [
     `gatsby-plugin-image`,
