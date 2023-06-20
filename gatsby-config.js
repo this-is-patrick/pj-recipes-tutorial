@@ -21,7 +21,7 @@ module.exports = {
     title: "Simply Recipes",
     description: "Nice and clean recipes site",
     author: "@pjjimiso",
-    siteUrl: "www.simplyrecipes.com",
+    siteUrl: "http://www.simplyrecipes.com",
     image: "./favicon.ico",
   },
   plugins: [
