@@ -9,7 +9,7 @@ const Images = () => {
         <StaticImage
           src="../assets/images/recipes/recipe-1.jpeg"
           alt="food"
-          placeholder="tracedSVG"
+          placeholder="blurred"
           layout="constrained"
           className="example-img"
           as="section"

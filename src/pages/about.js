@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link, graphql } from "gatsby";
 import RecipesList from "../components/RecipesList";
+import { SEO } from "../components/SEO";
 
 const About = ({
   data: {
@@ -62,3 +63,5 @@ export const query = graphql`
 `;
 
 export default About;
+
+export const Head = () => <SEO title="About" />;

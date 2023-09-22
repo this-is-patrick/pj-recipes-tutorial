@@ -8,11 +8,12 @@ export const useSiteMetadata = () => {
           title
           image
           description
+          siteUrl
           author
         }
       }
     }
   `);
 
-  return data.site.siteMetaData;
+  return data.site.siteMetadata;
 };
