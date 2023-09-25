@@ -4,6 +4,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { BsClockHistory, BsClock, BsPeople } from "react-icons/bs";
 import Layout from "../components/Layout";
 import slugify from "slugify";
+import { SEO } from "../components/SEO";
 
 const RecipeTemplate = ({ data }) => {
   const {
@@ -126,3 +127,5 @@ export const query = graphql`
 `;
 
 export default RecipeTemplate;
+
+export const Head = ({ data }) => <SEO title={data.contentfulBlog.title} />;

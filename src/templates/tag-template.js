@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import RecipesList from "../components/RecipesList";
 import Layout from "../components/Layout";
+import { SEO } from "../components/SEO";
 
 const TagTemplate = ({ data, pageContext }) => {
   const recipes = data.allContentfulBlog.nodes;
@@ -37,3 +38,5 @@ export const query = graphql`
 `;
 
 export default TagTemplate;
+
+export const Head = ({ pageContext }) => <SEO title={pageContext.tag} />;
